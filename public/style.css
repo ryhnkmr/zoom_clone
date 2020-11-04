@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#video-grid {
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+  flex-wrap: wrap;
+}
+
+video {
+  margin: 10px;
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+}
+
+.main__left {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__right {
+  flex: 0.2;
+}
+
+.main__videos {
+  flex-grow: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__controls {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c1E20;
+  padding: 5px;
+  color: #D2D2D2;
+}
+
+.main__controls__block {
+  display: flex;
+}
+
+.main__controls__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.main__controls__button i {
+  font-size: 24px;
+}
+
+.main__controls__button:hover {
+  background-color: #343434;
+  border-radius: 5px;
+}
+
+.leave_meeting {
+  color: #eb534b;
+}
+
+.main__right {
+  display: flex;
+  flex-direction: column;
+  background-color: #242324;
+  border-left: 1px solid #3d3d42;
+}
+
+.main__header {
+  color: #F5F5F5;
+  text-align: center;
+}
+
+.main__chat_window {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.main__message_container {
+  display: flex;
+  padding: 22px 12px;
+}
+
+.main__message_container input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: #F5F5F5;
+}
+
+.messages {
+  color: white;
+  list-style: none;
+}
+
+.unmute {
+  color: #eb534b;
+}
+
+.hands i {
+  font-size: 50px;
+}
+
+.selected_hands {
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+#result_text {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.result_wrap {
+  display: flex;
+  background-color: black;
+}
+
+.selected_hands i {
+  font-size: 50px;
+}
+
+.choose_hands {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1c1E20;
+}
+
+.hands {
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+.hands:hover {
+  background-color: #343434;
+  border-radius: 5px;
+}
